@@ -1,0 +1,22 @@
+Changes
+=======
+
+0.2 (2015-06-09)
+----------------
+
+User can now sum a field instead of just computing density - #5.
+Added a `--version` flag.
+Small internal performance boost.
+
+
+0.1.1 (2015-05-29)
+------------------
+
+gpsdio I/O args are now passed to `gpsdio.open()` - #4
+CRS info is now properly applied to the output raster - #3
+
+
+0.1 (2015-05-28)
+----------------
+
+Initial release - compatible with `gpsdio>=0.0.2`.
