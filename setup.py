@@ -57,7 +57,7 @@ setup(
     description="A driver plugin for gpsdio that enable writing to a Fiona supported OGR layer.",
     entry_points='''
         [gpsdio.drivers]
-        Vector=gpsdio_vector_driver.driver:Vector
+        Vector=gpsdio_vector_driver.core:Vector
     ''',
     extras_require={
         'test': ['pytest', 'pytest-cov']
@@ -70,7 +70,7 @@ setup(
     keywords='AIS GIS remote sensing vector',
     license=license,
     long_description=readme,
-    name='gpsdio-density',
+    name='gpsdio-vector-driver',
     packages=find_packages(),
     url=source,
     version=version,

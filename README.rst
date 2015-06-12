@@ -2,14 +2,21 @@
 gpsdio vector driver
 ====================
 
-.. image:: https://travis-ci.org/SkyTruth/gpsdio-vector-plugin.svg?branch=master
-    :target: https://travis-ci.org/SkyTruth/gpsdio-vector-plugin
+.. image:: https://travis-ci.org/SkyTruth/gpsdio-vector-driver.svg?branch=master
+    :target: https://travis-ci.org/SkyTruth/gpsdio-vector-driver
 
 
-.. image:: https://coveralls.io/repos/SkyTruth/gpsdio-vector-plugin/badge.svg?branch=master
-    :target: https://coveralls.io/r/SkyTruth/gpsdio-vector-plugin
+.. image:: https://coveralls.io/repos/SkyTruth/gpsdio-vector-driver/badge.svg?branch=master
+    :target: https://coveralls.io/r/SkyTruth/gpsdio-vector-driver
 
 A driver for gpsdio that enables writing to a `Fiona <https://github.com/Toblerity/Fiona>`_ supported `OGR <http://www.gdal.org/>`_ layer.
+
+For more information see:
+
+.. code-block:: python
+
+    import gpsdio_vector_driver.core
+    help(gpsdio_vector_driver.core.Vector)
 
 
 Installing
