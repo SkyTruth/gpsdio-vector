@@ -47,10 +47,10 @@ def test_complex_via_api(tmpdir):
         'driver': 'GeoJSON'
     }
 
-    with gpsdio.open('tests/data/points.json') as src, \
-            gpsdio.open(testfile, 'w', driver='Vector', do=do) as dst:
-        for idx, msg in enumerate(src):
-            dst.write(msg)
+    with gpsdio.open('tests/data/points.json') as src:
+        with gpsdio.open(testfile, 'w', driver='Vector', do=do) as dst:
+            for idx, msg in enumerate(src):
+                dst.write(msg)
 
     num_msgs = idx + 1
 
